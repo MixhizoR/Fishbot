@@ -5,5 +5,7 @@ import pyautogui as pag
 
 while keyboard.is_pressed('t') == False:
     if keyboard.is_pressed('q') == True:
-        print(pag.pixel(959,491))
+        x,y=pag.position()
+        print(f"coords, x={x}, y={y}")
+        print(pag.pixel(x,y))
         time.sleep(1)
